@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+a   #!/usr/bin/env python
 import os
 import sys
 import re
@@ -57,13 +57,15 @@ def applyFormula( gcodePath ):
 
 
 
-
+# Formula X axis
 def formulaX( c ):
     return c['x']
 
+# Formula Y axis
 def formulaY( c ):
     return c['y']-(c['x']/180)
 
+# Formula Z axis
 def formulaZ( c ):
     return c['z']
 
